@@ -165,7 +165,7 @@ public class MenuConsola {
     // 5. Actualizado a pedidoService.actualizarEstadoPedido(...)
     private void cambiarEstadoPedido() throws SQLException {
         int idPedido = leerEntero("Ingresa el ID del pedido: ");
-        System.out.print("Nuevo estado (PENDIENTE / EN_PREPARACION / LISTO /ENTREGADO / CANCELADO): ");
+        System.out.print("Nuevo estado (PENDIENTE / EN_PREPARACION / LISTO /ENTREGADO): ");
         String nuevoEstado = scanner.nextLine().trim().toUpperCase();
 
         pedidoService.actualizarEstadoPedido(idPedido, nuevoEstado);
